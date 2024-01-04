@@ -4,6 +4,8 @@ import { BrowserRouter as Router, Route } from 'react-router-dom';
 import Navbar from './Components/Navbar/Navbar';
 import Hero from './Components/Hero/Hero';
 import TeamSection from './Components/Team/Team';
+import ContactForm from './Components/Contact/Contact';
+import Footer from './Components/Footer/Footer';
 // import { Switch } from 'react-router-dom'; // Import Switch directly
 
 // import Navbar from './components/Navbar';
@@ -19,7 +21,8 @@ const App = () => {
         <Navbar />
         <Hero />
         <TeamSection/>
-       
+        <ContactForm/>
+       <Footer/>
       </div>
     </Router>
   );
