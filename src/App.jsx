@@ -5,6 +5,7 @@ import Navbar from './Components/Navbar/Navbar';
 import Hero from './Components/Hero/Hero';
 import TeamSection from './Components/Team/Team';
 import ContactForm from './Components/Contact/Contact';
+import AboutTeam from './Components/AboutTeam/AboutTeam';
 import Footer from './Components/Footer/Footer';
 // import { Switch } from 'react-router-dom'; // Import Switch directly
 
@@ -22,7 +23,9 @@ const App = () => {
         <Hero />
         <TeamSection/>
         <ContactForm/>
-       <Footer/>
+        <AboutTeam/>
+        <Footer/>
+       
       </div>
     </Router>
   );
