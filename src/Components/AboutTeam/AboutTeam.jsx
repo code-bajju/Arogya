@@ -8,25 +8,25 @@ const teamMembers = [
   {
     name: 'Mr. Vishal Gupta',
     role: 'NLP Dev',
-    description: 'Assistant Professor, MMEC, MM(DU)',
+    description: 'PHD Research Scholar',
     imageSrc: vishalImage,
   },
   {
     name: 'Sujal Garg',
     role: 'Ai/Ml Dev',
-    description: '4th Year',
+    description: 'Btech 4th Year',
     imageSrc: sujalImage,
   },
   {
     name: 'Bajrang',
     role: 'Frontend Dev',
-    description: '3rd Year',
+    description: 'Btech 3rd Year',
     imageSrc: bajrangImage,
   },
   {
     name: 'Sushant',
     role: 'Backend Dev',
-    description: '3rd Year',
+    description: 'Btech 3rd Year',
     imageSrc: sushantImage,
   },
 

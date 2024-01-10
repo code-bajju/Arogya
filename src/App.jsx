@@ -1,6 +1,6 @@
 // App.js
 import React from 'react';
-import { BrowserRouter as Router, Route } from 'react-router-dom';
+import { Route, createBrowserRouter, createRoutesFromElements, RouterProvider } from 'react-router-dom';
 import Navbar from './Components/Navbar/Navbar';
 import Hero from './Components/Hero/Hero';
 import TeamSection from './Components/Team/Team';
@@ -8,26 +8,28 @@ import ContactForm from './Components/Contact/Contact';
 import AboutTeam from './Components/AboutTeam/AboutTeam';
 import Footer from './Components/Footer/Footer';
 import Home from './Components/Home/Home';
-// import AppRouter from './Components/Router/Router';
-// import { Switch } from 'react-router-dom'; // Import Switch directly
+import BMICalculator from './Components/BMI/BmiCalculator';
+import ChatBot from './Components/ChatBot/ChatBot';
+const router = createBrowserRouter(
+  createRoutesFromElements(
+    <Route path="/" element={<Home />}>
+      <Route index element={<Home />} />
+      <Route path="bmi" element={<Hero />} />
+      {/* Add more routes as needed */}
+    </Route>
+  )
+)
 
-// import Navbar from './components/Navbar';
-// import Home from './components/Home';
-// import About from './components/About';
-// import Services from './components/Services';
-// import Contact from './components/Contact';
+function App({routes}) {
 
-const App = () => {
   return (
-   
-    <Router>
-       <Home/>
-      <div>
-       
-        {/* <AppRouter/> */}
-      </div>
-    </Router>
+    <>
+      <Navbar />
+      <ChatBot/>
+      {/* Add other common components here */}
+      <RouterProvider router={router}/>
+    </>
   );
-};
+}
 
 export default App;
