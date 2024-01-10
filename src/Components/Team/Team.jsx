@@ -21,15 +21,13 @@ const TeamSection = () => {
   return (
     <div className="flex flex-col items-center pt-5">
       <h1 className="text-3xl text-[#54284c] font-semibold mb-4">What We Provide?</h1>
-      <div className="grid items-center grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 p-8">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 p-8">
         {features.map((feature, index) => (
-          <div key={index} className="max-w-xs bg-white shadow-xl rounded-3xl pt-4 pb-8 px-5 cursor-pointer flex flex-col justify-between">
-            <div>
+          <div key={index} className="flex flex-col h-full max-w-md bg-white shadow-xl rounded-3xl p-4 cursor-pointer justify-between">
+            <div className="flex flex-col justify-center h-full">
               <h2 className="capitalize font-semibold text-lg mt-3 mb-2 text-gray-900 ">{feature.title}</h2>
               <p className="text-gray-600">{feature.description}</p>
             </div>
-            {/* Add an empty div to fill remaining space and center content */}
-            <div className="flex-grow"></div>
           </div>
         ))}
       </div>

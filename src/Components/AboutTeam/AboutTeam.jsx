@@ -6,7 +6,7 @@ import vishalImage from './vishal.jpeg';
 
 const teamMembers = [
   {
-    name: 'Mr. Vishat Gupta',
+    name: 'Mr. Vishal Gupta',
     role: 'NLP Dev',
     description: 'Assistant Professor, MMEC, MM(DU)',
     imageSrc: vishalImage,
