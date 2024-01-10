@@ -7,6 +7,8 @@ import TeamSection from './Components/Team/Team';
 import ContactForm from './Components/Contact/Contact';
 import AboutTeam from './Components/AboutTeam/AboutTeam';
 import Footer from './Components/Footer/Footer';
+import Home from './Components/Home/Home';
+// import AppRouter from './Components/Router/Router';
 // import { Switch } from 'react-router-dom'; // Import Switch directly
 
 // import Navbar from './components/Navbar';
@@ -17,15 +19,12 @@ import Footer from './Components/Footer/Footer';
 
 const App = () => {
   return (
+   
     <Router>
+       <Home/>
       <div>
-        <Navbar />
-        <Hero />
-        <TeamSection/>
-        <ContactForm/>
-        <AboutTeam/>
-        <Footer/>
        
+        {/* <AppRouter/> */}
       </div>
     </Router>
   );
